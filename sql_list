@@ -1,1 +1,11 @@
+-- craete user
+create user <username>
+identified by <password>
+default tablespace <tablespace_name>
+temporary tablespace <temporary_tablespace_name>;
 
+-- grant
+grant connect to <username>;
+
+-- create table
+create table <tablename> 
