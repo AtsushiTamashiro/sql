@@ -8,4 +8,11 @@ temporary tablespace <temporary_tablespace_name>;
 grant connect to <username>;
 
 -- create table
-create table <tablename> 
+create table <schema_name>.<table_name>
+  (
+    col1 number(10,0) not null,
+    col2 varchar2(10)
+  );
+
+-- create index
+create index <index_name> on <schema_name>.<table_name>(<col_name_1>, <col_name_n>) tablespace <tablespace_name>;
